@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<%- include header %>
+
+<section id="momo_desc">
+		<div class="container">
+			<h1>MTN Mobile Money Payment</h1>
+			<p>Make payment and get your copy of ChurcHymnary or ChurchHymbook</p>
+			<p>Please enter your mobile number and click to make payments.<span class="highlight"> You have just 120 seconds to do so</span></p>
+		</div>
+	</section>
+	<section id="momo_form">
+		<div id class="container">
+			<form id="formmomo" method="GET" action="https://developer.mtn.cm/OnlineMomoWeb/faces/transaction/transactionRequest.xhtml">
+				<input type="hidden" name="idbouton" value="2" autocomplete="off">
+				<input type="hidden" name="typebouton" value="PAIE" autocomplete="off">
+				<input class="momo mount" type="hidden" placeholder="" name="_amount" value="100" id="montant" autocomplete="off">
+       	 		<input class="momo host" type="" name="_tel" placeholder="Enter Mobile Money Number"  autocomplete="off" maxlength="9" minlength="9" required="required">
+        		<input class="momo pwd" placeholder="" name="_clP" value="sCev1_bf" autocomplete="off" type="hidden">
+				<input type="hidden" name="_email" value="ernestapondo@gmail.com" autocomplete="off">
+        		<input type="image" id="Button_Image" src="https://developer.mtn.cm/OnlineMomoWeb/console/uses/itg_img/buttons/MOMO_buy_now_EN.jpg" style="width : 2px; height:2px;" border="0" name="submit" alt="OnloneMomo, le réflexe sécurité pour payer en ligne" autocomplete="off">    
+        		<button type="button"   onclick="send('Button_Image')">Make Payment</button>  
+    		</form> 
+		</div>
+	</section>
+
+	<footer style="padding: 20px; margin-top: 20px; color: #ffffff; background-color: #e8491d; text-align: center;">
+        		<p>EE Web Design, Copyright &copy; 2019 Tel +23767194845</p>
+		</footer> 
+
+</body>
+</html>		

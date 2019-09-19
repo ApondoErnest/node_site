@@ -1,0 +1,42 @@
+<html lang="en">
+
+   <%- include proheader %>
+   <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h3>Welcome</h3>
+        <p>Your Main Dashboard</p>
+        <section id="momo_desc">
+		<div class="container">
+			<h1>MTN Mobile Money Payment</h1>
+			<p>Make payment complete your command and get our full attention!</p>
+			<p>Please enter your mobile number and click to make payments.<span class="highlight"> You have just 120 seconds to do so</span></p>
+		</div>
+	</section>
+	<section id="momo_form">
+		<div id class="container">
+			<form id="formmomo" method="GET" action="https://developer.mtn.cm/OnlineMomoWeb/faces/transaction/transactionRequest.xhtml">
+				<input type="hidden" name="idbouton" value="2" autocomplete="off" />
+				<input type="hidden" name="typebouton" value="PAIE" autocomplete="off" />
+				<input class="momo mount" type="hidden" placeholder="" name="_amount" value="100" id="montant" autocomplete="off" />
+       	 		<input class="momo host" type="" name="_tel" placeholder="Enter Mobile Money Number"  autocomplete="off" maxlength="9" minlength="9" required="required" />
+        		<input class="momo pwd" placeholder="" name="_clP" value="sCev1_bf" autocomplete="off" type="hidden" />
+				<input type="hidden" name="_email" value="ernestapondo@gmail.com" autocomplete="off" />
+        		<input type="image" id="Button_Image" src="https://developer.mtn.cm/OnlineMomoWeb/console/uses/itg_img/buttons/MOMO_buy_now_EN.jpg" style="width : 2px; height:2px;" border="0" name="submit" alt="OnloneMomo, le réflexe sécurité pour payer en ligne" autocomplete="off" />    
+        		<button type="submit"   onclick="send('Button_Image')">Make Payment</button>  
+
+    		</form> 
+		</div>
+	</section>
+      </div>  
+      <div class="jumbotron">
+        <p>
+          <a class="btn btn-lg btn-primary" href="/home/profile" role="button">View Your Profile »</a>
+        </p>
+      </div>
+
+</div>
+<footer style="padding: 20px; margin-top: 20px; color: #ffffff; background-color: #e8491d; text-align: center;">
+            <p>EE Web Design, Copyright &copy; 2019 Tel +23767194845</p>
+    </footer> 
+  </body>
+</html>      

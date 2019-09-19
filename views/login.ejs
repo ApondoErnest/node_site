@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<%- include header %>
+
+	
+		<div class="hero-wrap hero-bread" style="background-image: url('products/images/bg_6.jpg');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-0 bread">NOLICORP</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="#">Home</a></span> <span>Login To Profile</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="container">   
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                   
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>
+                        <!--<div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>-->
+                    </div>    
+ 
+                    <div style="padding-top:30px" class="panel-body" >
+                                                                        <% if (message.length > 0) { %>
+                                                                                    <div class="alert alert-danger col-sm-12"><%= message %></div>
+                                                                        <% } %>
+                           
+                        <form id="loginform" class="form-horizontal" role="form" method="post" action="/login">
+                                   
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="login-username" type="text" class="form-control" name="user_name" value="" placeholder="username" >                                       
+                                    </div>
+                               
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                            </div>                          
+                         
+                            <div class="input-group">
+                                      <!--<div class="checkbox">
+                                        <label>
+                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                        </label>
+                                      </div>-->
+                                    </div>
+                                 <div style="margin-top:10px" class="form-group">
+                                    <!-- Button --> 
+                                    <div class="col-sm-12 controls">
+                                      <button id="btn-login" type="submit" class="btn btn-success">Login  </button>                                   
+                                    </div>
+                                </div> 
+                                <div class="form-group">
+                                    <div class="col-md-12 control">
+                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                            Don't have an account!
+                                        <a href="/signup">
+                                            Sign Up Here
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </form>    
+                        </div>                    
+                    </div> 
+        </div>   
+    </div>
+ <section class="ftco-section bg-light">
+    	<div class="container">
+				<div class="row justify-content-center mb-3 pb-3">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big">Products</h1>
+            <h2 class="mb-4">What we do best!</h2>
+          </div>
+        </div>    		
+    	</div>
+    	<div class="container-fluid">
+    		<div class="row">
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="product">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-1.jpg1" alt="Colorlib Template"></a>
+    					<div class="text py-3 px-3">
+    						<h3><a href="#">Young Woman Wearing Dress</a></h3>
+    						<div class="d-flex">
+    							<div class="pricing">
+		    						<p class="price"><span>$120.00</span></p>
+		    					</div>
+		    					<div class="rating">
+	    							<p class="text-right">
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    					<hr>
+    						
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="product">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-2.jpg1" alt="Colorlib Template"></a>
+    					<div class="text py-3 px-3">
+    						<h3><a href="#">Young Woman Wearing Dress</a></h3>
+    						<div class="d-flex">
+    							<div class="pricing">
+		    						<p class="price"><span>$120.00</span></p>
+		    					</div>
+		    					<div class="rating">
+	    							<p class="text-right">
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    					<hr>
+    						
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="product">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-3.jpg1" alt="Colorlib Template"></a>
+    					<div class="text py-3 px-3">
+    						<h3><a href="#">Young Woman Wearing Dress</a></h3>
+    						<div class="d-flex">
+    							<div class="pricing">
+		    						<p class="price"><span>$120.00</span></p>
+		    					</div>
+		    					<div class="rating">
+	    							<p class="text-right">
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    					<hr>
+    						
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="product">
+    					<a href="#" class="img-prod"><img class="img-fluid" src="images/product-4.jpg1" alt="Colorlib Template"></a>
+    					<div class="text py-3 px-3">
+    						<h3><a href="#">Young Woman Wearing Dress</a></h3>
+    						<div class="d-flex">
+    							<div class="pricing">
+		    						<p class="price"><span>$120.00</span></p>
+		    					</div>
+		    					<div class="rating">
+	    							<p class="text-right">
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    					<hr>
+    						
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+<footer style="padding: 20px; margin-top: 20px; color: #ffffff; background-color: #e8491d; text-align: center;">
+        		<p>EE Web Design, Copyright &copy; 2019 Tel +23767194845</p>
+		</footer> 
+<!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="products/js/jquery.min.js"></script>
+  <script src="products/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="products/js/popper.min.js"></script>
+  <script src="products/js/bootstrap.min.js"></script>
+  <script src="products/js/jquery.easing.1.3.js"></script>
+  <script src="products/js/jquery.waypoints.min.js"></script>
+  <script src="products/js/jquery.stellar.min.js"></script>
+  <script src="products/js/owl.carousel.min.js"></script>
+  <script src="products/js/jquery.magnific-popup.min.js"></script>
+  <script src="products/js/aos.js"></script>
+  <script src="products/js/jquery.animateNumber.min.js"></script>
+  <script src="products/js/bootstrap-datepicker.js"></script>
+  <script src="products/js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="products/js/google-map.js"></script>
+  <script src="products/js/main.js"></script>
+
+  <script>
+		$(document).ready(function(){
+
+		var quantitiy=0;
+		   $('.quantity-right-plus').click(function(e){
+		        
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('#quantity').val());
+		        
+		        // If is not undefined
+		            
+		            $('#quantity').val(quantity + 1);
+
+		          
+		            // Increment
+		        
+		    });
+
+		     $('.quantity-left-minus').click(function(e){
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('#quantity').val());
+		        
+		        // If is not undefined
+		      
+		            // Increment
+		            if(quantity>0){
+		            $('#quantity').val(quantity - 1);
+		            }
+		    });
+		    
+		});
+	</script>
+    
+  </body>
+</html>
